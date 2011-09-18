@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>MainView</key>
+		<array>
+			<dict>
+				<!--@start selection-->
+				<key>Frame</key><string>0,480,320,200</string> <!-- Decides the location of Selection Bar were facebook and twitter etc are -->
+				<key>id</key><string>selection</string> <!-- ID for selection for action -->
+				<key>ViewType</key><string>View</string> <!-- Just view the selection nothing else just like a image -->
+				<key>Subviews</key> <!-- A view within a view becuase it devided into 4 section this is the first section wiht 300 lines of code the main view section -->
+				<array>
+					<dict>
+						<key>Frame</key><string>0,0,320,200</string> 
+						<key>Image</key> <!-- the start on image -->
+						<string>$ROOT/Images/Selection.png</string> <!-- $ROOT is the own dict so just say re-coding endroid -->
+						<key>ViewType</key><string>ImageView</string> <!-- Image View views a image -->
+					</dict>
+				</array>
+			<!--@end selection-->
+			</dict>
+			<dict>
+				<!--@Start dock-->
+				<key>Frame</key><string>0,415,320,65</string>
+				<key>Subviews</key>
+				<array>
+					<dict>
+						<key>Frame</key><string>135,15,50,5</string>
+						<key>Image</key>
+						<string>$ROOT/Images/PageIndicator.png</string>
+						<key>ViewType</key><string>ImageView</string>
+						<key>id</key><string>pageindi</string>
+					</dict>
+					<dict>
+						<key>Actions</key>
+						<array>
+							<string>launch com.wynd.dreamboard</string>
+						</array>
+						<key>Frame</key><string>84,26,150,38</string>
+						<key>Image</key>
+						<string>$ROOT/Images/DreamBoard.png</string>
+						<key>ViewType</key><string>Button</string>
+					</dict>
+					<dict>
+					<key>Actions</key><array>
+						<key>AllApps</key>
+        <false/>
+        <key>Apps</key>
+        <array>
+             <string>com.saurik.Cydia</string>
+             <string>com.wynd.dreamboard</string>
+             <string>com.wynd.DBStore</string>
+             <string>com.apple.fieldtest</string>
+             <string>eu.heinelt.ifile</string>
+             <string>com.mywi</string>
+        </array>
+        <key>Alpha</key>
+        <real>0.0</real>
+        <key>UserInteraction</key>
+        <false/>
+        <key>ClipToBounds</key>
+        <true/>
+        <key>Cols</key>
+        <integer>3</integer>
+        <key>Rows</key>
+        <integer>3</integer>
+        <key>Frame</key>
+        <string>15,15,230,300</string>
+        <key>GapX</key>
+        <integer>77</integer>
+        <key>GapY</key>
+        <integer>85</integer>
+        <key>IconHeight</key>
+        <integer>85</integer>
+        <key>IconWidth</key>
+        <integer>65</integer>
+        <key>PageHeight</key>
+        <integer>340</integer>
+        <key>PageWidth</key>
+        <integer>230</integer>
+        <key>ViewType</key>
+        <string>AppGrid</string>
+        <key>id</key>
+        <string>FavoriteAppsAppGrid</string>
+					<key>Frame</key><string>6,30,73,36</string>
+					<key>Image</key>
+					<string>$ROOT/Images/Apps.png</string>
+					<key>ViewType</key><string>Button</string>
+				</dict>
+				</array>
+			</dict>
+		</array>
+</dict>
+</plist>
